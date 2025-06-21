@@ -1,0 +1,38 @@
+
+        .galeria {
+            width: 400px;
+            height: 150px;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .carrusel {
+            display: flex;
+            width: max-content;
+        }
+        
+        .carrusel img {
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
+            /* border-radius: 8px; */
+            padding: 1px;
+            animation: desplazar 20s infinite linear;
+        }
+        
+        @keyframes desplazar {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-200px * 0));
+            }
+        }
+        
+        /* Reinicio suave invisible */
+        /* .carrusel:hover img {
+            animation-play-state: paused;
+        } */
